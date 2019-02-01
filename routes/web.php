@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::get('home', 'HomeController@index');
 
 Route::get('tasks', 'TasksController@index');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
